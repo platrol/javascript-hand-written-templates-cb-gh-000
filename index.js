@@ -1,8 +1,9 @@
 
 function addComment() {
-  var bodyText = "This research is bold and important!";
-  var commenter = "Definitely not a woodchuck looking to eat the wood";
-
+  event.preventDefault();
+  var bodyText = document.getElementById("commentText").value;
+  var commenter = document.getElementById("commenterName").value;
+ 
   var commentBody = createCommentBody(bodyText);
   var commenterLabel = createCommenterLabel(commenter);
   postNewComment(commentBody, commenterLabel);
