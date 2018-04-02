@@ -11,17 +11,17 @@
         After careful consideration and a generous grant from NASA, our team has determined that a woodchuck could chuck five wood, with a standard deviation of +/- .37 wood.
       </p>
       <footer>posted by Chuck Wooden</footer>
-      <a href='#' onclick='addComment();'>addComment</a>
-       <div id='comments'>
 
-       </div>
+      <footer>posted by Chuck Wooden</footer>
+  <form id="newComment" onSubmit="addComment()">
+    Add comment: <input type="text" id="commentText"><br>
+    Your name: <input type="text" id="commenterName"><br>
+    <input type="submit">
+  </form>
+  <div id="comments">
+  </div>
 
     </article>
-    <script>
-    function addComment() {
-      var commentDiv = document.getElementById('comments')
-      commentDiv.innerHTML = '<div><p>This research is bold and important!</p><p>I wish to join your team</p></div><div><p>posted by: <span>I swear I am not a woodchuck</span></p></div>';
-    }
-    </script>
+
   </body>
 </html>
